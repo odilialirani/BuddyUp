@@ -1,0 +1,90 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-size: 35px;
+  margin-left: 20px;
+  position: fixed; }
+
+body {
+  overflow-y: hidden;
+  background-color: #ddc0a1; }
+
+.container-fluid {
+  padding: 0;
+  margin: 0 5%;
+  width: 90%; }
+
+#mainContent {
+  margin: 80px 2%;
+  width: 96%; }
+  #mainContent #recommendationWrapper {
+    padding-bottom: 30px;
+    margin-left: -50px;
+    margin-right: -50px;
+    border-bottom: solid thin; }
+    #mainContent #recommendationWrapper h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 35px; }
+    #mainContent #recommendationWrapper .row {
+      text-align: center; }
+    #mainContent #recommendationWrapper #list {
+      display: inline-block; }
+    #mainContent #recommendationWrapper .recommendation {
+      background-color: #333;
+      height: 210px;
+      width: 210px;
+      margin: 10px; }
+      #mainContent #recommendationWrapper .recommendation p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        letter-spacing: 5px;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1; }
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px; }
+
+.menu-icon {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-right: 20px; }
+
+.menu-icon:hover {
+  cursor: pointer;
+  cursor: hand; }
+
+/*# sourceMappingURL=profile.css.map */
