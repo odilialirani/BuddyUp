@@ -1,0 +1,39 @@
+#home {
+    background-color: #ddc0a1;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 5.5vw;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#joinusButton {
+    background-color: #333;
+    color: #fff;
+}
+
+#loginButton {
+    background-color: #333;
+    color: #fff;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    height: 70px;
+    margin: 0 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
