@@ -10,7 +10,7 @@ h1 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-size: 5.5vw;
-  margin-bottom: 150px; }
+  margin-bottom: 130px; }
 
 #joinusButton {
   background-color: #333;
@@ -28,6 +28,9 @@ h1 {
   height: 70px;
   margin: 10px 30px;
   font-family: 'Raleway', sans-serif; }
+
+body {
+  overflow-y: hidden; }
 
 * {
   margin: 0;
