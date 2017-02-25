@@ -27,7 +27,7 @@ textarea, textarea:focus {
     text-align: justify;
     -moz-text-align-last: center; /* Firefox 12+ */
     text-align-last: center;
-    border-radius: 10px;
+    border-radius: 5px;
     resize: none;
     border-style: none;
     border: none;
