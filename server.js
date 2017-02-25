@@ -5,7 +5,7 @@ const pathName = {
     root: __dirname + '/public/',
     dotfiles: 'deny'
 };
-
+app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
     res.sendFile('index.html', pathName);
 });
