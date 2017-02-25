@@ -14,8 +14,10 @@ app.get('/:path', (req, res) => {
     const path = req.params.path;
 	if (path == "joinus") {
         res.sendFile('joinus.html', pathName);
-    } else if (path == "login") {
+    } else if (path == "profile") {
         res.sendFile('profile.html', pathName);
+    } else if (path == 'login') {
+        res.sendFile('login.html', pathName);
     } else {
         res.status(404).send("NOT FOUND");
     }

@@ -15,8 +15,6 @@ h1 {
     background-color: #ddc0a1;
 }
 #signUpForm {
-    margin-left: 30%;
-    margin-right: 23%;
     
 }
 body {
@@ -38,4 +36,10 @@ textarea, textarea:focus {
 span {
     font-family: 'Raleway', sans-serif;
     font-size: 2vw;
+}
+.btn {
+  width: 150px;
+  height: 40px;
+  margin: 10px 30px;
+  font-family: 'Raleway', sans-serif; 
 }
