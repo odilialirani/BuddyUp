@@ -1,0 +1,35 @@
+h1 {
+    
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 5.5vw;
+    color: #333333;
+}
+#brand {
+    padding: 0;
+    margin: 0;
+}
+#content {
+    height: 100vh;
+    padding-top: 70px;
+    background-color: #ddc0a1;
+}
+#signUpForm {
+    padding-left: 30%;
+    padding right: 30%;
+}
+body {
+    overflow-y: hidden;
+}
+textarea, textarea:focus {
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+    border-radius: 10px;
+    resize: none;
+    border-style: none;
+    border: none;
+    overflow: auto;
+    outline: none;
+}
