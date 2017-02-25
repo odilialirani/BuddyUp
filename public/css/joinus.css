@@ -15,8 +15,9 @@ h1 {
     background-color: #ddc0a1;
 }
 #signUpForm {
-    padding-left: 30%;
-    padding right: 30%;
+    margin-left: 30%;
+    margin-right: 23%;
+    
 }
 body {
     overflow-y: hidden;
@@ -32,4 +33,9 @@ textarea, textarea:focus {
     border: none;
     overflow: auto;
     outline: none;
+    font-size: 1.5vw;
+}
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
 }
