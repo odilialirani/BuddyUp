@@ -41,6 +41,8 @@ app.get('/:path', (req, res) => {
         res.sendFile('profile.html', pathName);
     } else if (path == 'login') {
         res.sendFile('login.html', pathName);
+    } else if (path == 'plan') {
+        res.sendFile('plan.html', pathName);
     } else {
         res.status(404).send("NOT FOUND");
     }

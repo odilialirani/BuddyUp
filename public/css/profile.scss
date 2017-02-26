@@ -3,13 +3,12 @@ h1 {
     text-align: left;
     font-size: 35px;
     margin-left: 20px;
-    position: fixed;
+    position: absolute;
 }
 
 
 body {
-    overflow-y: hidden;
-    background-color: #ddc0a1;
+    background-color: #e4ccb4; //#ddc0a1;
 
 }
 
@@ -59,6 +58,50 @@ body {
             }
         }
     }
+    
+    #feeds {
+        margin: 20px;
+        
+        #feedList {
+            width: 65%;
+            margin: 10px;
+            ul {
+                list-style: none;
+                
+                li {
+                    padding: 10px;
+                    margin: 10px;
+                    background-color: #feffff;
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    color: #333;
+
+                }
+            }
+        }
+        
+        #friendList {
+            width: 30%;
+            margin: 20px 10px;
+            padding: 10px;
+            background-color: #feffff;
+            
+            ul {
+                padding-left: 10px;
+                list-style: none;
+                li {
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    color: #333;
+                    padding: 10px 5px;
+                    border-bottom: solid thin #d3d3d3;
+                }
+                
+            }
+        }
+        
+    }
+    
 }
 
 

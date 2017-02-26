@@ -1,0 +1,213 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    font-size: 35px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+body {
+    background-color: #e4ccb4; //#ddc0a1;
+
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0 5%;
+    width: 90%;
+}
+
+#mainContent {
+    margin: 80px 2%;
+    width: 96%;
+    
+    
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #destinationWrapper {
+        border-bottom: solid thin;
+        font-family: sans-serif;
+        font-size: 15px;
+        padding: 70px 50px;
+        
+        .form-control, .form-control:focus {
+            border: none;
+            border-bottom: solid #333 thin;
+            background-color: transparent;
+            box-shadow: none;
+            border-radius: 0;
+            margin-right: 50px;
+        }
+        
+        .input-group {
+            
+            .input-group-addon, .input-group-addon:focus {
+                
+                background-color: transparent;
+                border-style: none;
+                
+                .glyphicon-calendar {
+                    color: #333;
+                }
+
+            }
+        }
+
+    }
+    
+    #activityWrapper {
+        
+        border-bottom: solid thin;
+        font-family: sans-serif;
+        padding: 30px 50px;
+        
+        margin-left: -50px;
+        margin-right: -50px;
+
+        h3 {
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 30px;
+        }
+        
+        #list {
+            display: inline-block;
+
+            .activity {
+                background-color: #333;
+                height: 210px;
+                width: 210px;
+                margin: 10px;
+                text-align: center;
+
+                i {
+                    font-size: 60px;
+                    color: #fff;
+                    margin: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: relative;
+
+                }
+            }
+        }
+        
+        
+        
+    }
+    
+    #transportWrapper {
+        
+        padding: 30px;
+        margin-left: -50px;
+        margin-right: -50px;
+        border-bottom: solid thin;
+        
+        h3 {
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 30px;
+        }
+        
+        .row {
+            text-align: center;
+        }
+        #list {
+            display: inline-block;
+        }
+        .transport {
+            background-color: #333;
+            height: 210px;
+            width: 210px;
+            margin: 10px;
+            text-align: center;
+            
+            i {
+                font-size: 60px;
+                color: #fff;
+                margin: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                position: relative;
+                
+            }
+        }
+    }
+    
+    #continue {
+        padding: 30px;
+        margin-left: -50px;
+        margin-right: -50px;
+        text-align: center;
+        
+        button {
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            padding: 15px 25px;
+        }
+        
+    }
+    
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// side nav
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+.menu-icon {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+
+.menu-icon:hover {
+    cursor: pointer;
+    cursor: hand;
+}
