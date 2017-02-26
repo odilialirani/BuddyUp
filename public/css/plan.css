@@ -48,47 +48,50 @@ body {
       text-align: center;
       font-family: 'Raleway', sans-serif;
       margin-bottom: 30px; }
+    #mainContent #activityWrapper .row {
+      text-align: center; }
     #mainContent #activityWrapper #list {
       display: inline-block; }
-      #mainContent #activityWrapper #list .activity {
-        background-color: #333;
-        height: 210px;
-        width: 210px;
-        margin: 10px;
-        text-align: center; }
-        #mainContent #activityWrapper #list .activity i {
-          font-size: 60px;
-          color: #fff;
-          margin: auto;
-          top: 50%;
-          transform: translateY(-50%);
-          position: relative; }
-        #mainContent #activityWrapper #list .activity figcaption {
-          opacity: 0;
-          position: absolute;
-          width: inherit;
-          height: 50px;
-          margin-left: -15px;
-          bottom: 0;
-          text-align: left;
-          border-style: solid;
-          -o-transition: opacity .3s ease-in-out;
-          -ms-transition: opacity .3s ease-in-out;
-          -moz-transition: opacity .3s ease-in-out;
-          -webkit-transition: opacity .3s ease-in-out;
-          transition: opacity .3s ease-in-out;
-          overflow-y: hidden; }
-      #mainContent #activityWrapper #list .activity:hover i {
-        margin-top: -15px; }
-      #mainContent #activityWrapper #list .activity:hover figcaption {
-        background-color: #feffff;
-        color: #333;
-        opacity: 1; }
-        #mainContent #activityWrapper #list .activity:hover figcaption h2 {
-          margin: 5px 10px;
-          text-align: left;
-          font-size: 30px;
-          font-family: 'Raleway', sans-serif; }
+    #mainContent #activityWrapper .activity {
+      background-color: #333;
+      height: 210px;
+      width: 210px;
+      margin: 10px;
+      text-align: center;
+      cursor: pointer; }
+      #mainContent #activityWrapper .activity i {
+        font-size: 60px;
+        color: #fff;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative; }
+      #mainContent #activityWrapper .activity figcaption {
+        opacity: 0;
+        position: absolute;
+        width: inherit;
+        height: 50px;
+        margin-left: -15px;
+        bottom: 0;
+        text-align: left;
+        border-style: solid;
+        -o-transition: opacity .3s ease-in-out;
+        -ms-transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+        overflow-y: hidden; }
+    #mainContent #activityWrapper .activity:hover i {
+      margin-top: -15px; }
+    #mainContent #activityWrapper .activity:hover figcaption {
+      background-color: #feffff;
+      color: #333;
+      opacity: 1; }
+      #mainContent #activityWrapper .activity:hover figcaption h2 {
+        margin: 5px 10px;
+        text-align: left;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif; }
   #mainContent #transportWrapper {
     padding: 30px;
     margin-left: -50px;
@@ -165,9 +168,10 @@ body {
       -webkit-transition-duration: 0.4s;
       /* Safari */
       transition-duration: 0.4s; }
-    #mainContent #continue button:hover {
+    #mainContent #continue button:hover, #mainContent #continue button:focus {
       background-color: #feffff;
-      color: #333; }
+      color: #333;
+      box-shadow: none; }
 
 * {
   margin: 0;

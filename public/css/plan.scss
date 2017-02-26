@@ -76,15 +76,20 @@ body {
             margin-bottom: 30px;
         }
         
+        .row {
+            text-align: center;
+        }
         #list {
             display: inline-block;
-
+        }
             .activity {
                 background-color: #333;
                 height: 210px;
                 width: 210px;
                 margin: 10px;
                 text-align: center;
+                
+                cursor: pointer;
 
                 i {
                     font-size: 60px;
@@ -114,9 +119,9 @@ body {
                 transition: opacity .3s ease-in-out;
                 
                 overflow-y: hidden;
-                
+                }
             }
-            }
+            
             .activity:hover {
             
             i {
@@ -138,10 +143,6 @@ body {
                 }
             }
         }
-        }
-        
-        
-        
     }
     
     #transportWrapper {
@@ -254,9 +255,10 @@ body {
             transition-duration: 0.4s;
         }
         
-        button:hover {
+        button:hover, button:focus {
             background-color: #feffff;
             color: #333;
+            box-shadow: none;
         }
         
     }
