@@ -19,6 +19,7 @@
         
         <link rel="stylesheet" type="text/css" href="css/joinus.css">
         
+        <script src="../database.js"></script>
         <title>Buddy Up - Join Us</title>
     </head>
     <body>
@@ -27,7 +28,7 @@
         </div>
         <div id="content" style="text-align: center;">
             <div class="container-liquid" id="signUpForm" style="display: inline-block; width: 50%;">
-                <form>
+                <form id="signUpForm">
                     <div class="row">
                         <div class="col-md-6 col-xs-3">
                             <span><strong>First Name</strong></span>
@@ -38,10 +39,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xs-3">
-                            <textarea rows="1"></textarea>
+                            <textarea rows="1" name="first_name"></textarea>
                         </div>
                         <div class="col-md-6 col-xs-3">
-                            <textarea rows="1"></textarea>
+                            <textarea rows="1" name="last_name"></textarea>
                         </div>
                     </div>
                     <div class="row">
@@ -52,7 +53,7 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-12">
                             <center>
-                                <textarea rows="1"></textarea>
+                                <textarea rows="1" name="email"></textarea>
                             </center>
                         </div>
                     </div>
@@ -66,17 +67,19 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xs-3">
-                            <textarea rows="1"></textarea>
+                            <textarea rows="1" name="password"></textarea>
                         </div>
                         <div class="col-md-6 col-xs-3">
                             <textarea rows="1"></textarea>
                         </div>
                     </div>
                     <br>
-                    <button class="btn btn-lg">CLICK ME</button>
+                    <input type="submit" class="btn btn-lg" value="SUBMIT">
                 </form>
                 <hr>
                 <a href="/login">Already have an account? Log In here</a>
+                
+                <section id="display_post"></section>
             </div>
         </div>
     </body>
