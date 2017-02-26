@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="/css/plan.css">
+        
+        <script src="js/custom.js"></script>
+        
+        <!-- font awesome -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- Bootstrap Date-Picker Plugin -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+        <title>Buddy Up</title>
+        
+    </head>
+    
+    <body>
+        
+        
+        
+        <header id="header">
+            <h1>Buddy<b>Up</b></h1>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#home">Home</a>
+                  <a href="#profile">Profile</a>
+                  <a href="#plan">Plan a trip</a>
+                    <a href="#buddies">Buddies</a>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+        </header>
+        
+        <div class="container container-fluid">
+            <div id="mainContent">
+                <div class="row">
+                    <h2>Plan Your Trip</h2>                  
+                </div>
+                <div id="destinationWrapper">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="form-group">
+                          <label for="departureDes">Place of Departure:</label>
+                          <input type="text" class="form-control" id="departureDes">
+                        </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+                                <div class="form-group">
+                                  <label for="destination">Destination:</label>
+                                  <input type="text" class="form-control" id="destination">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class='col-lg-6'>
+                            <div class="form-group">
+                                <label for="departureDate">Departure date:</label>
+                                <div class='input-group date' id='departureDate'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-lg-6'>
+                            <div class="form-group">
+                                <label for="returnDate">Return date:</label>
+                                <div class='input-group date' id='returnDate'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            /*
+                             $(function () {
+                                $('#departureDate').datetimepicker();
+                                $('#returnDate').datetimepicker({
+                                    useCurrent: false //Important! See issue #1075
+                                });
+                                $("#departureDate").on("dp.change", function (e) {
+                                    $('#returnDate').data("DateTimePicker").minDate(e.date);
+                                });
+                                $("#returnDate").on("dp.change", function (e) {
+                                    $('#departureDate').data("DateTimePicker").maxDate(e.date);
+                                });
+                            });
+                                */                
+                            /* https://uxsolutions.github.io/bootstrap-datepicker/?markup=component&format=&weekStart=&startDate=&endDate=&startView=0&minViewMode=0&maxViewMode=4&todayBtn=false&clearBtn=false&language=en&orientation=auto&multidate=true&multidateSeparator=&autoclose=on&keyboardNavigation=on&forceParse=on#sandbox */
+                            
+                                $('.input-group.date').datepicker({
+                                        autoclose: true
+                                });
+                                
+                        </script>
+
+                        </div>
+                      </form>
+                </div>
+                
+                <div id="activityWrapper">
+                
+                    <h3>What do you want to do?</h3>
+                    <div class="row">
+                        <div id="list">
+                            <div class="col-md-2 col-xs-12 activity"><i class="fa fa-briefcase"></i></div>
+                            <div class="col-md-4 col-xs-12 activity"><i class="fa fa-camera-retro"></i></div>
+                            <div class="col-md-8 col-xs-12 activity">                        <i class="fa fa-cutlery"></i></div>
+                            <div class="col-md-10 col-xs-12 activity"><i class="fa fa-shopping-bag"></i>
+                            </div>
+                            <div class="col-md-12 col-xs-12 activity"><i class="fa fa-compass"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div id="transportWrapper">
+                    <h3>Choice of Transport</h3>
+                    <div class="row">
+                        <div id="list">
+                            <div class="col-md-2 col-xs-12 transport"><i class="fa fa-plane"></i></div>
+                            <div class="col-md-4 col-xs-12 transport"><i class="fa fa-train"></i></div>
+                            <div class="col-md-8 col-xs-12 transport">                        <i class="fa fa-car"></i></div>
+                            <div class="col-md-10 col-xs-12 transport"><i class="fa fa-taxi"></i>
+                            </div>
+                            <div class="col-md-12 col-xs-12 transport"><i class="fa fa-bus"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div id="continue">
+                    
+                    <button class="btn btn-lg">Buddy<b>Up</b></button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+     
+    </body>
+    
+    
+</html>

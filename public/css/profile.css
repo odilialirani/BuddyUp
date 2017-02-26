@@ -3,11 +3,10 @@ h1 {
   text-align: left;
   font-size: 35px;
   margin-left: 20px;
-  position: fixed; }
+  position: absolute; }
 
 body {
-  overflow-y: hidden;
-  background-color: #ddc0a1; }
+  background-color: #e4ccb4; }
 
 .container-fluid {
   padding: 0;
@@ -43,6 +42,34 @@ body {
         top: 50%;
         transform: translateY(-50%);
         position: relative; }
+  #mainContent #feeds {
+    margin: 20px; }
+    #mainContent #feeds #feedList {
+      width: 65%;
+      margin: 10px; }
+      #mainContent #feeds #feedList ul {
+        list-style: none; }
+        #mainContent #feeds #feedList ul li {
+          padding: 10px;
+          margin: 10px;
+          background-color: #feffff;
+          font-family: sans-serif;
+          font-size: 15px;
+          color: #333; }
+    #mainContent #feeds #friendList {
+      width: 30%;
+      margin: 20px 10px;
+      padding: 10px;
+      background-color: #feffff; }
+      #mainContent #feeds #friendList ul {
+        padding-left: 10px;
+        list-style: none; }
+        #mainContent #feeds #friendList ul li {
+          font-family: sans-serif;
+          font-size: 15px;
+          color: #333;
+          padding: 10px 5px;
+          border-bottom: solid thin #d3d3d3; }
 
 * {
   margin: 0;
