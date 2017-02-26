@@ -5,31 +5,10 @@ const pathName = {
     root: __dirname + '/public/',
     dotfiles: 'deny'
 };
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-   host     : 'localhost',
-   database : 'test'
- });
- 
- connection.connect(function(err){
- if(!err) {
-     console.log("Database is connected ... \n\n");  
- } else {
-     console.log("Error connecting database ... \n\n");  
- }
- });
-
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/images'));
 app.get('/', (req, res) => {
-    connection.query('SELECT * from test', function(err, rows, fields) {
- connection.end();
-   if (!err)
-     console.log('The solution is: ', rows);
-   else
-     console.log('Error while performing Query.');
-   });
     res.sendFile('index.html', pathName);
     
 });
